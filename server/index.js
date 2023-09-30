@@ -16,7 +16,7 @@ app.use("/user", userRouter)
 // Connect to MongoDB
 // DONT MISUSE THIS THANKYOU!!
 app.get("/", (req, res)=>{
-res.send("new things")
+res.send("hello")
 })
 mongoose.connect('mongodb://localhost:27017/courses', { useNewUrlParser: true, useUnifiedTopology: true, dbName: "courses" });
 
